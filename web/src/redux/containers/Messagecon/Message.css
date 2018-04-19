@@ -1,0 +1,46 @@
+
+.demo-col-inset {
+    min-height: 30px;
+    line-height: 40px;
+	font-size: 14px;
+	margin:5px
+}
+.inset{
+	min-height: 30px;
+    line-height: 40px;
+	font-size: 14px;
+	color: #A5A5A5;
+	margin:5px
+}
+.num{
+	font-size: 14px;
+	color: #003B00;
+	line-height: 20px;
+}
+.demo-col-inset1 {
+    min-height: 30px;
+    line-height: 40px;
+	font-size: 14px;
+	color: #A5A5A5;
+	margin:10%
+}
+.btoright{
+	margin-left:20px;
+	margin-top:65px;
+	line-height:60px;
+	background: #F6FAFF;
+}
+.right1{
+	margin-left:20px;
+	line-height:60px;
+}
+.right2{
+	margin-left:20px;
+	line-height:60px;
+	background: #F6FAFF;
+}
+.top{
+	width:100%;
+	height:130px;
+	border:1px solid #D0D0D0;
+}

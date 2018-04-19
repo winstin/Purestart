@@ -1,0 +1,19 @@
+.batchEva-title{
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+}
+.rateState-select.next-select{
+    min-width: 100px;
+    margin: 0px 10px 0px 10px;
+}
+.orange-text{
+    color: #F48608;
+}
+.a-href{
+    cursor: pointer;
+}
+.inline-style-right{
+    float: right;
+    display: block;
+}

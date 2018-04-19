@@ -1,0 +1,25 @@
+.evaStyle{
+    border: 1px solid #EBEBEB;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+.radio{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    height: 30px;
+    line-height: 30px;
+}
+.radioGroup{
+    margin-top: 6px;
+    margin-bottom: -6px;
+}
+.radioGroup-head-text{
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #000000;
+}
+
+.radio-select{
+    margin: 5px 5px 5px 0px;
+}

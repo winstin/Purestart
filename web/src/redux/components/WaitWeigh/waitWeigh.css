@@ -1,0 +1,110 @@
+/*BatchWeighOper*/
+
+.weigh-info{
+    width:80%;
+    margin: 0 auto;
+}
+
+.weigh-info .weigh-title{
+    font-size: 20px;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.weigh-info img{
+    float: left;
+    min-width: 100px;
+    min-height: 100px;
+    margin-right: 20px;
+}
+
+.weigh-info .intro{
+    float: left;
+}
+.weigh-info .intro span{
+    display: block;
+}
+.weigh-info .intro span:nth-child(1){
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.weigh-info .weigh-button{
+    position: absolute;
+    right: 5%;
+    bottom:40%;
+    background: #ff9e00;
+}
+
+.weigh-finish .feedback{
+
+}
+.next-feedback.next-feedback-success.next-feedback-inline{
+    background: #fff;
+}
+
+.weigh-finish .feedback span b{
+    color: #ff9e00;
+    font-size: 25px;
+}
+
+.weigh-finish .feedback span:nth-child(2){
+    display: block;
+    margin:15px 0;
+}
+
+.weigh-input{
+    outline: none;
+}
+
+.weigh-input::-webkit-input-placeholder{
+    font-size: 14px;
+}
+.weigh-input::-moz-placeholder{
+    font-size: 14px;
+}
+
+a .dialog-btn{
+    display: inline-block;
+    padding:2%;
+    color:#fff;
+    background: rgb(48, 137, 220);
+    width:95px;
+    height: 32px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 20px;
+}
+
+a .dialog-btn:nth-child(1){
+    width:105px;
+}
+
+/*ScanCodeWeighOper*/
+
+.scancode-info{
+    width:80%;
+    margin: 0 auto;
+}
+
+.scancode-info .scancode-title{
+    font-size: 20px;
+    text-align: center;
+    margin: 100px 0 150px 0;
+}
+
+.scancode-info .scancode-img{
+    width:551px;
+    margin: 0 auto;
+}
+
+.scancode-info .scan-step{
+    display: inline-block;
+    width:33%;
+    padding-left: 12%;
+    box-sizing: border-box;
+}
+
+.scancode-info .scan-step img{
+    display: block;
+}

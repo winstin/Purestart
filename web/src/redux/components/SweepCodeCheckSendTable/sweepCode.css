@@ -1,0 +1,34 @@
+.send-goods-fail{
+    color:red;
+    font-size:20px;
+}
+.send-goods-fail-button{
+    margin-left: 55px;
+}
+.send-goods-fail-button2{
+    margin-left: 10px;
+}
+.send-goods-fail-isshow{
+    text-align:center;
+    display: none;
+}
+.send-goods-isshow{
+    text-align:center;
+    display: block;
+}
+.have-sweep-sum-finish{
+    color:#6ed363;
+}
+.have-sweep-sum-nofinish{
+    color:red;
+}
+.scsg-img-style{
+    margin-top: 10%;
+    margin-left: 35%;
+}
+.send-goods-fail{
+    display: none;
+}
+.send-goods-success{
+    display: block;
+}

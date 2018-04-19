@@ -1,0 +1,25 @@
+.evaSettings{
+    width: 100%;
+    margin-top: 20px;
+}
+.table-head{
+    width:100%;
+    height:40px;
+    background: #EBEBEB;
+    border: 1px solid #EBEBEB;
+}
+.table-head-text{
+    line-height: 40px;
+    margin-left: 10px;
+    width:80%;
+    color: #000;
+}
+.table-head-button{
+    float: right;
+    width:20%;
+    margin:5px 0px 5px 0px;
+    text-align:center;
+}
+.table-button-cell{
+    text-align:center;
+}

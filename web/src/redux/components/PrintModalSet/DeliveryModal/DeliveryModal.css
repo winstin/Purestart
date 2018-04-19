@@ -1,0 +1,16 @@
+.delivery-modal-div{
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.delivery-modal-th{
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    font-family:微软雅黑;
+    font-weight:normal;
+}
+
+.next-tabs-tabpane{
+    width: 100%;
+}

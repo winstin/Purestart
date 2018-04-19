@@ -1,0 +1,67 @@
+.dialog-title{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+.stock-input{
+    margin-bottom: 10px;
+}
+
+/*StockControlDetail*/
+ul.goods-info{
+    width:100%;
+    overflow: hidden;
+}
+
+ul.goods-info li{
+    float: left;
+    width:33%;
+    margin-bottom: 10px;
+}
+
+.oper-log{
+    width:100%;
+}
+
+.oper-log .detail-log{
+    width:100%;
+    border-bottom: 1px solid #eee;
+    padding:5px 0;
+}
+
+.oper-log .detail-log span:nth-child(2){
+    margin-right: 10px;
+}
+
+/*表格中中的叉号*/
+.controlOrderTable .table-cross {
+    display:inline-block;
+    width:15px;
+    height:2px;
+    background:#999;
+    font-size:0;
+    line-height:0;
+    vertical-align:middle;
+    -webkit-transform: rotate(45deg);
+    margin:0 15px 0 0;
+}
+
+.controlOrderTable .table-cross:after {
+    content:'.';
+    display:block;
+    width:15px;
+    height:2px;
+    background:#999;
+    -webkit-transform: rotate(-90deg);
+}
+
+.controlOrderTable .next-checkbox:nth-child(1) {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.28571;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-left: 30px;
+}

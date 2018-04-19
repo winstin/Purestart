@@ -1,0 +1,32 @@
+.excep-buttons{
+    position: fixed;
+    z-index: 999;
+}
+
+.excep-items{
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.excep-items i:before{
+    font-size: 12px;
+    color: #f44336;
+}
+
+.dialog-custom {
+    min-width: 500px;
+}
+
+.dialog-custom .next-dialog-footer .next-btn-primary{
+    float: right;
+}
+
+.dialog-custom .next-dialog-header{
+    font-weight: 900;
+    font-size: 17px;
+}
+
+.filter-input::before{
+    font-size: 10px;
+    margin-left: 5px;
+}

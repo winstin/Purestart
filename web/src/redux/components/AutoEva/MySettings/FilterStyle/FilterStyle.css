@@ -1,0 +1,25 @@
+.filterStyle{
+    border: 1px solid #EBEBEB;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+.checkbox{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    height: 30px;
+    line-height: 30px;
+}
+.checkboxGroup{
+    margin-top: 6px;
+    margin-bottom: -6px;
+    display: block;
+}
+.checkboxGroup-head-text{
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #000000;
+}
+.checkbox-filter{
+    margin: 6px 5px 5px 0px;
+}

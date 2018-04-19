@@ -1,0 +1,76 @@
+/*StockCheck*/
+.stockchenck-dialog{
+    background: #fff;
+}
+
+.next-notice.next-notice-warning.next-notice-standalone{
+    background: #fff;
+}
+
+/*StockDetail*/
+.stock-detail{
+    width:35%;
+    margin: 0 auto;
+}
+
+.stock-detail .detail-title{
+    font-size: 20px;
+    margin:10px 0;
+}
+
+.stock-detail .detail-content{
+    width:100%;
+    margin: 0 auto;
+    border:1px solid #dedede;
+    overflow: hidden;
+}
+
+.stock-detail .detail-content h3{
+    text-align: center;
+    font-size: 18px;
+}
+
+.stock-detail .detail-content img{
+    width:200px;
+    height: 200px;
+    display: block;
+    margin:20px auto;
+}
+.stock-detail .detail-content .detail-type{
+    float: left;
+}
+.stock-detail .detail-content .detail-type span{
+    font-size: 18px;
+}
+.stock-detail .detail-content .detail-type span:nth-child(2){
+    font-size: 25px;
+    color:#ff9e00;
+}
+
+.stock-detail .detail-content .detail-num{
+    float: right;
+    font-size: 18px;
+}
+.stock-detail .detail-content .detail-num span{
+    font-size: 25px;
+}
+
+.stock-detail .detail-input {
+    margin:50px 0 0 100px;
+    font-size: 25px;
+}
+
+.stock-detail .detail-button{
+    position: fixed;
+    bottom:200px;
+    left:46%;
+}
+
+/*StockEnter*/
+.stock-enter-data{
+    border:none;
+}
+
+.stock-enter-data .next-icon-add:before{
+    content: "\E60D";
+}

@@ -1,0 +1,12 @@
+.input-none{
+    display: none;
+}
+.input-show{
+    display: block;
+}
+.input-class-none{
+    display: none;
+}
+.input-class-show{
+    display: block;
+}

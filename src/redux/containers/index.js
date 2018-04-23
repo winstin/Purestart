@@ -19,10 +19,17 @@ import Form from './Form/Form';
 import TradeIndex from './TradeIndex/TradeIndex'
 import AutoEva from './AutoEva/AutoEva';
 import MultiShop from './MultiShop/MultiShop';
-import BatchEva from './BatchEva/BatchEva';
 import RateManager from './RateManager/RateManager';
 import Interceptor from './Interceptor/Interceptor';
 
+import ServiceRate from './ServiceRate/ServiceRate';
+import GunsIndex from './GunsIndex/GunsIndex';
+import BatchPage from './BatchPage/BatchPage';
+import ServiceManger from './ServiceManger/ServiceManger';
+import GetManger from './GetManger/GetManger';
+import ChannelStatistics from './ChannelStatistics/ChannelStatistics';
+import CommodityStatistics from './CommodityStatistics/CommodityStatistics';
+import Login from './Login/Login';
 
 
-export  {Nextstep,ManVip,AllSend,ShSetting,ZcpSetting,HpSetting,FhSetting,EcSet,CfSet,MultiShop, BatchEva, RateManager, Messagecon, TradeIndex, Interceptor, AutoEva, App, Form}
+export  {Login,ChannelStatistics,CommodityStatistics,GetManger,ServiceManger,BatchPage,GunsIndex,ServiceRate,Nextstep,ManVip,AllSend,ShSetting,ZcpSetting,HpSetting,FhSetting,EcSet,CfSet,MultiShop, RateManager, Messagecon, TradeIndex, Interceptor, AutoEva, App, Form}

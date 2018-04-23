@@ -32,21 +32,21 @@ var App = React.createClass({
                     >
                         <div className="qn-navigation-vertical" style={{background:"#3189DC"}}>
                           <Icon type ="account" />
-                          <span>爱用交易</span>
+                          <span>星洁科技</span>
                         </div>
                         <Myitem
                             kind = "navigation_max"
                             itemId="Trade"
                             icon="form"
                             link="/dist"
-                            text="商品管理"
+                            text="商户管理"
                         >
                             <Navigation>
                                   <Myitem
                                       itemId="Trade"
                                       kind = "navigation_max"
-                                      link="/dist/TradeIndex"
-                                      text="商品管理"
+                                      link="/dist/GunsIndex"
+                                      text="商户管理"
                                       ></Myitem>
                               </Navigation>
                         </Myitem>
@@ -61,7 +61,7 @@ var App = React.createClass({
                                   <Myitem
                                       itemId="Item"
                                       kind = "navigation_max"
-                                      link="/dist/waitWeigh"
+                                      link="/dist/BatchPage"
                                       text="交易流水查询"
                                       ></Myitem>
                                   {/*<Myitem
@@ -113,19 +113,19 @@ var App = React.createClass({
                                   <Myitem
                                       itemId="Box"
                                       kind = "navigation_max"
-                                      link="/dist/stockControl"
+                                      link="/dist/CommodityStatistics"
                                       text="商品手续统计"
                                       ></Myitem>
                                   <Myitem
                                       itemId="Box"
                                       kind = "navigation_max"
-                                      link="/dist/stockControl"
+                                      link="/dist/ChannelStatistics"
                                       text="渠道分润统计"
                                       ></Myitem>
                                   <Myitem
                                       itemId="Box"
                                       kind = "navigation_max"
-                                      link="/dist/batcheva"
+                                      link="/dist/GetManger"
                                       text="收益管理"
                                       ></Myitem>
                             </Navigation>
@@ -134,14 +134,14 @@ var App = React.createClass({
                             itemId="AutoEva"
                             kind = "navigation_max"
                             icon="set"
-                            link="/dist/autoeva"
+                            link="/dist/ServiceManger"
                             text="服务商管理"
                         ></Myitem>
                         <Myitem
                             kind = "navigation_max"
                             itemId="EvaMan"
                             icon="bags"
-                            link="/dist/stockCheck"
+                            link="/dist/ServiceRate"
                             text="服务商费率"
                         >
                         {/*<Navigation>
@@ -187,7 +187,7 @@ var App = React.createClass({
                             kind = "navigation_max"
                             itemId="Settings"
                             icon="set"
-                            link="/dist/itemMatch"
+                            link="/dist/Login"
                             text="设置"
                         >
                         </Myitem>

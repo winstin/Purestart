@@ -55,10 +55,8 @@ class Myitem extends Component {
         let ishavachildren = false;
         let sub_activeType = false;
 
-        console.log(this.props.children)
         React.Children.map(this.props.children,function(c){
             React.Children.map(c.props.children,function(e){
-                console.log("ishavachildren:"+e.props.link)
                 ishavachildren =true
                 if(e.props.link == router.pathname){
                     return sub_activeType =true;
@@ -112,7 +110,7 @@ class Myitem extends Component {
             当前的nav‘link是否和router相匹配
         **/
         let next_navigation_item_open = copy_actvieType || sub_activeType || selectType? 'next-navigation-item-opened':'';
-        console.log(itemId+'当前活跃状态：'+copy_actvieType+'   是否子目录:'+sub_activeType +' 是否含有子目录：'+ishavachildren)
+        // console.log(itemId+'当前活跃状态：'+copy_actvieType+'   是否子目录:'+sub_activeType +' 是否含有子目录：'+ishavachildren)
         return (
             <li style={{backgroundColor:'#3189DC'}} className={`next-navigation-item ${next_navigation_item_open}`} >
                 <div className="next-navigation-item-content">

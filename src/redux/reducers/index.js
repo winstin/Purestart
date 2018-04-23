@@ -38,6 +38,6 @@ import InGeneralSituation from './InGeneralSituation'
 import TradeListOne from './TradeListOne'
 import InBasicSettings from './InBasicSettings'
 
-
-export  {InBasicSettings,InGeneralSituation,InterceptRecord,BabyFilter,WangwangFilter,ReceiverIntercept,DistrictIntercept,WangBlacklist,TradeListOne,Message,AutoEva, GoodsMatch, SendErrorOrderTable,Myitem, tradeOrderTable, ErrorOrder, TradeSync, CheckOrders, weighOrderTable, WaitPrintOrderTable, PrintDialog, batchWeighOper, SweepCodeCheckSendTable, WaitWeigh, Refund, MatchTable, MatchCheck, ScanCodeWeigh,GoodsListTable,StockControl, StockEnter,StockEnterData,  LogisticsMatch, LogisticModal, StockCheckTable, StockCheck, ElecFaceModal, PrintSet}
+import ServiceRate from './ServiceRate'
+export  {ServiceRate,InBasicSettings,InGeneralSituation,InterceptRecord,BabyFilter,WangwangFilter,ReceiverIntercept,DistrictIntercept,WangBlacklist,TradeListOne,Message,AutoEva, GoodsMatch, SendErrorOrderTable,Myitem, tradeOrderTable, ErrorOrder, TradeSync, CheckOrders, weighOrderTable, WaitPrintOrderTable, PrintDialog, batchWeighOper, SweepCodeCheckSendTable, WaitWeigh, Refund, MatchTable, MatchCheck, ScanCodeWeigh,GoodsListTable,StockControl, StockEnter,StockEnterData,  LogisticsMatch, LogisticModal, StockCheckTable, StockCheck, ElecFaceModal, PrintSet}
 

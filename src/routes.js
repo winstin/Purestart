@@ -4,7 +4,7 @@ import {Router, Route, IndexRoute} from 'react-router'
 //从src/containers/index.js导入
 
 
-import {Nextstep,ManVip,AllSend,ZcpSetting,HpSetting,ShSetting,FhSetting,EcSet,CfSet,MultiShop, BatchEva, RateManager, Messagecon, TradeIndex, Interceptor, AutoEva, App, Form} from './redux/containers/'
+import {Login,CommodityStatistics,ChannelStatistics,GetManger,ServiceManger,BatchPage,GunsIndex,ServiceRate,Nextstep,ManVip,AllSend,ZcpSetting,HpSetting,ShSetting,FhSetting,EcSet,CfSet,MultiShop, BatchEva, RateManager, Messagecon, TradeIndex, Interceptor, AutoEva, App, Form} from './redux/containers/'
 
 // import ErrorOrder from './redux/components/ErrorOrder'
 
@@ -45,7 +45,17 @@ export const createRoutes = () => ({
         {path: '/dist/Message/manvip', component: ManVip},
         {path: '/dist/Message/next', component: Nextstep},
         {path:'/dist/multishop',component:MultiShop},
-        {path:'/dist/dsd',component:Form},
+       
+
+        
+        {path:'/dist/ServiceRate',component:ServiceRate},
+        {path:'/dist/GunsIndex',component:GunsIndex},
+        {path:'/dist/BatchPage',component:BatchPage},
+        {path:'/dist/ServiceManger',component:ServiceManger},
+        {path:'/dist/GetManger',component:GetManger},
+        {path:'/dist/ChannelStatistics',component:ChannelStatistics},
+        {path:'/dist/CommodityStatistics',component:CommodityStatistics},
+         {path:'/dist/Login',component:Login},
     // PageNotFound(),
     // Redirect
   ]

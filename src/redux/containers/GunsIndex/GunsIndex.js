@@ -12,6 +12,7 @@ import * as ServiceRate from '../../actions/ServiceRate'
 import { Row, Col } from 'qnui/lib/grid';
 import Input from 'qnui/lib/input';
 import Pagination from 'qnui/lib/pagination';
+import Dimensions from 'react-dimensions';
 
 
 const onRowClick = function(record, index, e) {
@@ -68,6 +69,7 @@ class GunsIndex extends Component {
   }
 
   render() {
+        const {containerHeight} = (this.props);
         return (
             <div>
                 <Row>
@@ -80,7 +82,7 @@ class GunsIndex extends Component {
                     </Row>
                 </Row>
                 <div style={{marginTop:'20px'}}>
-                    <Table dataSource={this.state.dataSource} onRowClick={onRowClick} fixedHeader maxBodyHeight={750}>
+                    <Table dataSource={this.state.dataSource} onRowClick={onRowClick} fixedHeader maxBodyHeight={containerHeight}>
                         <Table.Column title="商户号" dataIndex="id"/>
                         <Table.Column title="商户名称" dataIndex="title.name"/>
                         <Table.Column title="结算卡号" dataIndex="time"/>
@@ -117,4 +119,12 @@ function mapDispatchToProps(dispatch,ownProps){
     return  bindActionCreators( ServiceRate , dispatch )
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(GunsIndex)
+export default Dimensions({
+  getHeight: function() { //element
+    return window.innerHeight - 190;
+  },
+  getWidth: function() { //element
+    return window.innerWidth - 24;
+  }
+})(connect(mapStateToProps, mapDispatchToProps)(GunsIndex))
+

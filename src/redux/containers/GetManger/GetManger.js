@@ -12,6 +12,7 @@ import Select, {Option} from 'qnui/lib/select';
 import { Row, Col } from 'qnui/lib/grid';
 import Input from 'qnui/lib/input';
 import DatePicker, { RangePicker } from 'qnui/lib/date-picker';
+import Dimensions from 'react-dimensions';
 
 
 // import MySettings from './MySettings/MySettings';
@@ -87,7 +88,7 @@ class GetManger extends Component {
         })
     }
     render(){
-        const {add, value, switchState ,changeSwitchState} = this.props;
+        const {add, value, switchState ,changeSwitchState,containerHeight} = this.props;
         const TabPane = Tab.TabPane;
         const extraContent = <div className="radio-state"><div className='text-radio-state'>中差评电台提醒：</div><Switch className="radio-switch" checked={switchState} size="small" onChange={()=>{changeSwitchState(switchState)}} /></div>;
         return(
@@ -97,7 +98,7 @@ class GetManger extends Component {
                     <RangePicker /><Button type="primary" style={{width:'100px',marginLeft:'10px'}} >搜索</Button>
                 </Row>
                 <div style={{marginTop:'10px',marginBottom:'10px'}}>
-                    <Table dataSource={this.state.dataSource} onRowClick={onRowClick} rowSelection={this.state.rowSelection} hasBorder={false} fixedHeader maxBodyHeight={750}>
+                    <Table dataSource={this.state.dataSource} onRowClick={onRowClick} rowSelection={this.state.rowSelection} hasBorder={false} fixedHeader maxBodyHeight={containerHeight}>
                         <Table.Column title={<b>交易日期</b>} dataIndex="id" cell={renderOrder}/>
                         <Table.Column title={<b>交易金额</b>} dataIndex="title.name" width={200}/>
                         <Table.Column title={<b>交易笔数</b>} dataIndex="time" width={150}/>
@@ -116,17 +117,25 @@ class GetManger extends Component {
     }
 }
 
-// function mapStateToProps(state, ownProps){
-//     return {
-//         value:state.BatchEva.value,
-//         switchState:state.BatchEva.switchState
-//     }
-// }
-//
-// function mapDispatchToProps(dispatch,ownProps){
-//     return  bindActionCreators( AddAction , dispatch )
-// }
 
-// export default connect(mapStateToProps, mapDispatchToProps)(BatchEva)
-export default (GetManger)
+
+function mapStateToProps(state, ownProps){
+    return {
+        data:state.ServiceRate.isupdate
+    }
+}
+
+
+function mapDispatchToProps(dispatch,ownProps){
+    return  bindActionCreators( ServiceRate , dispatch )
+}
+
+export default Dimensions({
+  getHeight: function() { //element
+    return window.innerHeight - 270;
+  },
+  getWidth: function() { //element
+    return window.innerWidth - 24;
+  }
+})(GetManger)
 

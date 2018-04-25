@@ -12,6 +12,7 @@ import * as ServiceRate from '../../actions/ServiceRate'
 import { Row, Col } from 'qnui/lib/grid';
 import Input from 'qnui/lib/input';
 import Pagination from 'qnui/lib/pagination';
+import Dimensions from 'react-dimensions';
 
 
 const onRowClick = function(record, index, e) {
@@ -68,6 +69,8 @@ class BatchPage extends Component {
   }
 
   render() {
+        const {containerHeight} = (this.props);
+        
         return (
             <div>
                 <Row>
@@ -99,32 +102,36 @@ class BatchPage extends Component {
                         <Input placeholder="商户号" className="textClsName"  style={{width:'120px',marginLeft:'12px'}}/>
                         <Input placeholder="订单状态" className="textClsName"  style={{width:'120px',marginLeft:'12px'}}/>
                         <Input placeholder="交易结果" className="textClsName"  style={{width:'120px',marginLeft:'12px'}}/>
-                        <span style={{fontSize:'14px',marginTop:'7px',width:'70px',marginLeft:'12px'}}>时间选择：</span>
+                        
+                    </Row>
+
+                </Row>
+                <Row style={{marginTop:'20px'}}>
+                        <span style={{fontSize:'14px',marginTop:'7px',width:'70px'}}>时间选择：</span>
                         <RangePicker />
                         <Button type="primary" style={{width:'80px',marginLeft:'10px'}} >搜索</Button>
                         <Button type="normal" style={{width:'80px',marginLeft:'10px'}} >导出</Button>
-                    </Row>
                 </Row>
                 <div style={{marginTop:'20px'}}>
-                    <Table dataSource={this.state.dataSource} onRowClick={onRowClick} fixedHeader maxBodyHeight={750}>
-                        <Table.Column title="订单号" dataIndex="id"/>
-                        <Table.Column title="渠道订单号" dataIndex="title.name"/>
-                        <Table.Column title="交易时间" dataIndex="time"/>
-                        <Table.Column title="商户号" dataIndex="time"/>
-                        <Table.Column title="商户名称" dataIndex="time"/>
-                        <Table.Column title="所属渠道" dataIndex="time"/>
-                        <Table.Column title="渠道编号" dataIndex="time"/>
-                        <Table.Column title="交易金额" dataIndex="time"/>
-                        <Table.Column title="费率（‰）" dataIndex="time"/>
-                        <Table.Column title="代付费" dataIndex="time"/>
-                        <Table.Column title="交易手续费" dataIndex="time"/>
-                        <Table.Column title="交易状态" dataIndex="time"/>
-                        <Table.Column title="银行名称" dataIndex="time"/>
-                        <Table.Column title="交易结果" dataIndex="time"/>
-                        <Table.Column title="上游渠道" dataIndex="time"/>
-                        <Table.Column title="交易卡号" dataIndex="time"/>
-                        <Table.Column title="交易类型" dataIndex="time"/>
-                        <Table.Column title="结算卡号" dataIndex="time"/>
+                    <Table dataSource={this.state.dataSource} onRowClick={onRowClick} fixedHeader maxBodyHeight={containerHeight}>
+                        <Table.Column title="订单号" dataIndex="id" width={100}/>
+                        <Table.Column title="渠道订单号" dataIndex="title.name" width={120}/>
+                        <Table.Column title="交易时间" dataIndex="time"  width={100}/>
+                        <Table.Column title="商户号" dataIndex="time"  width={100}/>
+                        <Table.Column title="商户名称" dataIndex="time"  width={100}/>
+                        <Table.Column title="所属渠道" dataIndex="time"  width={100}/>
+                        <Table.Column title="渠道编号" dataIndex="time"  width={100}/>
+                        <Table.Column title="交易金额" dataIndex="time"  width={100}/>
+                        <Table.Column title="费率（‰）" dataIndex="time"  width={120}/>
+                        <Table.Column title="代付费" dataIndex="time"  width={100}/>
+                        <Table.Column title="交易手续费" dataIndex="time"  width={120}/>
+                        <Table.Column title="交易状态" dataIndex="time"  width={100}/>
+                        <Table.Column title="银行名称" dataIndex="time"  width={100}/>
+                        <Table.Column title="交易结果" dataIndex="time"  width={100}/>
+                        <Table.Column title="上游渠道" dataIndex="time"  width={100}/>
+                        <Table.Column title="交易卡号" dataIndex="time"  width={100}/>
+                        <Table.Column title="交易类型" dataIndex="time"  width={100}/>
+                        <Table.Column title="结算卡号" dataIndex="time"  width={100}/>
                     </Table>
                 </div>
                 <div style={{marginTop:'20px',float:'right'}}>
@@ -151,4 +158,11 @@ function mapDispatchToProps(dispatch,ownProps){
     return  bindActionCreators( ServiceRate , dispatch )
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(BatchPage)
+export default Dimensions({
+  getHeight: function() { //element
+    return window.innerHeight - 270;
+  },
+  getWidth: function() { //element
+    return window.innerWidth - 24;
+  }
+})(connect(mapStateToProps, mapDispatchToProps)(BatchPage))

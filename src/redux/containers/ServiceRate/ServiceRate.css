@@ -1,0 +1,18 @@
+.marginTop{
+    margin-top: 10px;
+}
+.flexStyle{
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+	width: 120px
+}
+.next-dialog-header {
+    font-size: 14px;
+    margin: 0;
+    padding: 0 20px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-right: 46px;
+    height: 30px
+
+}

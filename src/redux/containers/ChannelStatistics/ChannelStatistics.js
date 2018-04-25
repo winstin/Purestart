@@ -12,6 +12,7 @@ import * as ServiceRate from '../../actions/ServiceRate'
 import { Row, Col } from 'qnui/lib/grid';
 import Input from 'qnui/lib/input';
 import Pagination from 'qnui/lib/pagination';
+import Dimensions from 'react-dimensions';
 
 
 const onRowClick = function(record, index, e) {
@@ -68,6 +69,7 @@ class GunsIndex extends Component {
   }
 
   render() {
+        const {containerHeight} = (this.props);
         return (
             <div>
                 <Row>
@@ -80,7 +82,7 @@ class GunsIndex extends Component {
                     </Row>
                 </Row>
                 <div style={{marginTop:'20px'}}>
-                    <Table dataSource={this.state.dataSource} onRowClick={onRowClick} fixedHeader maxBodyHeight={750}>
+                    <Table dataSource={this.state.dataSource} onRowClick={onRowClick} fixedHeader maxBodyHeight={containerHeight}>
                         <Table.Column title="交易日期" dataIndex="id"/>
                         <Table.Column title="渠道ID" dataIndex="title.name"/>
                         <Table.Column title="渠道名称" dataIndex="time"/>
@@ -88,7 +90,7 @@ class GunsIndex extends Component {
                         <Table.Column title="交易笔数" dataIndex="time"/>
                         <Table.Column title="交易手续费分成" dataIndex="time"/>
                         <Table.Column title="D0手续费" dataIndex="time"/>
-                        <Table.Column title="应结费用" dataIndex="time"/>
+                        <Table.Column title="应结分润" dataIndex="time"/>
                     </Table>
                 </div>
                 <div style={{marginTop:'20px',float:'right'}}>
@@ -115,4 +117,12 @@ function mapDispatchToProps(dispatch,ownProps){
     return  bindActionCreators( ServiceRate , dispatch )
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(GunsIndex)
+export default Dimensions({
+  getHeight: function() { //element
+    return window.innerHeight - 190;
+  },
+  getWidth: function() { //element
+    return window.innerWidth - 24;
+  }
+})(connect(mapStateToProps, mapDispatchToProps)(GunsIndex))
+
